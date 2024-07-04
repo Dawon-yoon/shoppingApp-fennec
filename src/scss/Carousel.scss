@@ -1,0 +1,55 @@
+.carousel{
+    position: relative;
+    width: 100%;
+    .carousel-image{
+        display: flex;
+        transition: transform 0.5s ease-in-out;
+        img{
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+    }
+    button.prev,button.next{
+     position: absolute;
+     top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    background: none;
+    font-size: 18px;
+    color: grey;
+    &.prev{
+        left: 10px;
+    }
+    &.next{
+        right: 10px;
+    }
+    }
+    .indicators {
+        position: absolute;
+        bottom: 10px;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+    
+        button {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.7);
+            border: none;
+            margin: 0 5px;
+            cursor: pointer;
+    
+            &:hover {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+    
+            &.active {
+                background-color: rgba(0, 0, 0, 0.7);
+            }
+        }
+    } 
+}
+

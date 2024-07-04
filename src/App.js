@@ -1,8 +1,14 @@
-import './App.css';
+import AppLayout from './Layout/AppLayout';
+import AppRouter from './routes/AppRouter';
+import './App.scss';
+import "./scss/Card.scss";
 
 function App() {
   return (
-    <div className="App">
+    <div>
+      <AppLayout>
+        <AppRouter/>
+      </AppLayout>
     </div>
   );
 }

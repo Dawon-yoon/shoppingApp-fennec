@@ -1,0 +1,46 @@
+.home-main{
+    padding: 0;
+    margin: 0;
+    .home-image-wrapper{
+        height: 100vh;
+        img{
+            width: 100%;
+            height: 100vh;
+        }
+
+        .mobie-image {
+            display: none;
+        }
+    }
+    .home-video-wrapper{
+        position: relative;
+        width: 100%;
+        padding-bottom: 56.25%;
+        height: 100%;
+        margin-top: -0.3px;
+    }
+    iframe{
+        position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: block;
+            margin: 0;
+            border: none;
+    }
+}
+
+@media (max-width:768px){
+    .home-main{
+        .pc-image{
+            display: none !important;
+        }
+        .mobie-image{
+            display: block !important;
+        }
+        .home-video-wrapper{
+            display: none !important;
+        }
+}
+}

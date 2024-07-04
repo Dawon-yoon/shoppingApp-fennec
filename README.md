@@ -2,9 +2,11 @@
 
 ## バック・アクセサリーブランドの fennec のオンラインストア
 
-### stack: react,scss,redux
+### stack: react,scss,redux,json-server
 
-1. Home 　 Page
+## user story
+
+1. Home Page
 
 - ホームから fennec のイメージと広告の映像が見れる
 - 上段には Navbar で logo,menu,サーチアイコン、カートアイコン、ユーザアイコン(login or mypage)が見える
@@ -26,6 +28,20 @@
 
 ### mobile 共通
 
+- 全てのページは responsive
 - menu とアイコンは表示しなくなる。hamberger icon のみ表示される。
 - hamberger icon=>side bar 表示　：　 menu,search,cart,login(or logout),mypage(login の場合)が表示される＆ページに移動できるリンク
 - footer : 画面の大きさに応じで並びが変わる　 4 列 →2 列 →1 列
+
+product model
+{
+"id":0,
+"productImage":"",
+"title":"",
+"price":0,
+"new":boolean,
+"descriptions":[],
+"category":"",
+"additionalImages":[]
+},
+//현재 id:18 만들차례

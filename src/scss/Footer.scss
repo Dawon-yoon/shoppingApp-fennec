@@ -1,0 +1,65 @@
+$gap:15px;
+
+@mixin grid-container{
+    display: grid;
+    grid-gap: $gap;
+}
+
+.container{
+    border-top: 1px solid grey;
+    .first-row{
+        padding: $gap;
+        @include grid-container;
+        grid-template-columns: repeat(4,1fr);
+
+        .company,
+        .contact,
+        .info,
+        .follow{
+            padding: 10px;
+            p{
+                font-size: 13px;
+                line-height: 1.3rem;
+            }
+            h6{
+            font-size: 15px;
+        }
+            div{
+                font-size: 13px;
+                cursor: pointer;
+            }
+        }
+
+        .footer-links{
+            font-size: 11px;
+            display: flex;
+            gap: $gap;
+
+            div{
+                border-bottom: 1px solid grey;
+                &:hover{
+                    cursor: pointer;
+                   
+                }
+            }
+        }
+    }
+
+    .second-row{
+        border-top: 1px solid grey;
+        font-size: 14px;
+        padding-left:$gap ;
+    }
+}
+
+@media (max-width:1024px){
+    .first-row{
+        grid-template-columns: repeat(2,1fr) !important;
+    }
+}
+
+@media(max-width:768px){
+    .first-row{
+        grid-template-columns: 1fr !important;
+    }
+}
