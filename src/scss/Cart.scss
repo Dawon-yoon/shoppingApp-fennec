@@ -4,9 +4,33 @@
 }
 .cart-center{
     padding-top: 119px;
+    margin-bottom: 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    .cart-empty{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 15rem;
+        gap: 10rem;
+        font-size: 20px;
+        button{
+            font-size: 17px;
+            width: 200px;
+            height: 50px;
+            background-color: black;
+            color:white;
+            letter-spacing: 0.08rem;        
+            &:hover{
+                cursor: pointer;
+                background-color: white;
+                color: black;
+                transition: all 0.3s ease-in-out;
+            }
+        }
+    }
 }
 
 //cart list and order buttons
