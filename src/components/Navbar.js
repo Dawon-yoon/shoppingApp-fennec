@@ -36,7 +36,9 @@ const Navbar = () => {
           </ul>
           <div className='nav-icons'>
             <div className='nav-icons-hidden'><FontAwesomeIcon icon={faMagnifyingGlass} /></div>
-            <div className='nav-icons-hidden'><FontAwesomeIcon icon={faCartShopping} /></div>
+          <div
+            onClick={()=>handleNavigate("/cart")}
+            className='nav-icons-hidden'><FontAwesomeIcon icon={faCartShopping} /></div>
             <div className='nav-icons-hidden'><FontAwesomeIcon icon={faUser} /></div>
           </div>
         <div

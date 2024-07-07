@@ -3,6 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getProductsBags } from '../reducer/productSlice';
 import SubNav from '../components/SubNav';
 import Card from '../components/Card';
+import { ClipLoader } from 'react-spinners';
 
 const ProductBags = () => {
   const dispatch = useDispatch();
@@ -12,8 +13,11 @@ const ProductBags = () => {
   },[dispatch])
 
   if (isLoading) { 
-    console.log("loading...");
-    }
+    return (
+    <div className='loading-spinner'>
+      <ClipLoader size={100} color='black' loading/>
+    </div>)
+  }
   if (error) {
       console.log("error:",error)
   }

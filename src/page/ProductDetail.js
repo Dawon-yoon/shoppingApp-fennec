@@ -1,49 +1,63 @@
 import React, { useEffect,useState } from 'react';
 import { useSelector, useDispatch } from'react-redux';
-import { useParams } from 'react-router-dom';
+import { useParams,useNavigate } from 'react-router-dom';
 import { getProductDetail } from '../reducer/productSlice';
+import { addToCartList } from '../reducer/cartSlice';
 import '../scss/Detail.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faMinus,faPlus,faAngleDown } from '@fortawesome/free-solid-svg-icons';
 import Carousel from '../components/Carousel';
-
 import { ClipLoader } from 'react-spinners';
 
 const ProductDetail = () => {
-  
+  const navigate = useNavigate();
   const dispatch = useDispatch();
-  const { products, isLoading, error } = useSelector((state) => state.product);
+  let { id } = useParams();
+
+  const { product, isLoading, error } = useSelector((state) => state.product);
+
   const [orderStock, setOrderStock] = useState(1);
-   let { id } = useParams();
+
   useEffect(() => { 
     dispatch(getProductDetail(id));
   }, [id,dispatch])
   
   if (isLoading) { 
     return (
-    <div className='product-detail'>
-      <ClipLoader size={150} color='black' loading/>
+    <div className='loading-spinner'>
+      <ClipLoader size={100} color='black' loading/>
     </div>)
   }
+
   if (error) { 
     console.log("error:", error);
   }
+
   const handlePlusStock = () => setOrderStock(orderStock + 1);
+
   const handleMinusStock = () => { 
     if (orderStock > 1) { 
       setOrderStock(orderStock - 1);
     }
   }
+
+  const handleNavigate = (path, orderStock) => { 
+    if (path === "/cart") { 
+      dispatch(addToCartList({ ...product, orderStock }));
+    }
+    navigate(path, {state:orderStock});
+  } 
+
   return (
     <div className='product-detail'>
-      {products && products.additionalImages &&   <Carousel item={products.additionalImages} />}
+      {product && product.additionalImages &&  <Carousel item={product.additionalImages} />}
       <div className='detail-info'>
-        <h2>{products.title}</h2>
+        <h2>{product?.title}</h2>
         <div className='detail-price'>
-          ¥{products.price}
+          ¥{product?.price}
         </div>
         <div className='detail-order-stock'>
-          <div>¥{products.price*orderStock}</div>
+          <div>¥{product?.price*orderStock}</div>
           <div>
             <button onClick={handleMinusStock}><FontAwesomeIcon icon={faMinus} /></button>
             <span>{orderStock}</span>
@@ -51,12 +65,12 @@ const ProductDetail = () => {
           </div>
         </div>
         <div className='detaile-button-area'>
-          <button>Add to cart</button>
-          <button>Buy it now</button>
+          <button onClick={()=>handleNavigate("/cart",orderStock)}>Add to cart</button>
+          <button onClick={()=>handleNavigate("/payment",product,orderStock)}>Buy it now</button>
         </div>
         <div>
           <h4>Details<FontAwesomeIcon icon={faAngleDown} /></h4>
-          {products?.descriptions?.map((description, index) => (<p key={index}>- {description}</p>))}
+          {product?.descriptions?.map((description, index) => (<p key={index}>- {description}</p>))}
         </div>
       </div>
       </div>

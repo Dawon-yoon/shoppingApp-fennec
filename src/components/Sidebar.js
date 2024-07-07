@@ -35,7 +35,7 @@ const Sidebar = () => {
               <span onClick={()=>handleNavigate("/product/acc")}>ACC</span>
         </div>
           <div className='second-col'>
-              <span >Cart</span>
+              <span onClick={()=>handleNavigate("/cart")}>Cart</span>
               <span onClick={()=>handleNavigate("/login")}>Login</span>
               <span>JP / KR</span>
           </div>  

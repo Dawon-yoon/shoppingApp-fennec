@@ -8,6 +8,8 @@ import Register from '../page/Register';
 import ProductBags from '../page/ProductBags';
 import ProductWallet from '../page/ProductWallet';
 import ProductAcc from '../page/ProductAcc';
+import Cart from '../page/Cart';
+import PaymentPage from '../page/PaymentPage';
 
 const AppRouter = () => {
   return (
@@ -20,7 +22,9 @@ const AppRouter = () => {
         <Route path='/product/acc' element={<ProductAcc/> }/>
         <Route path='/product/:id' element={<ProductDetail />} />
         <Route path='/login' element={<Login />} />
-        <Route path='/register' element={ <Register/>}/>
+        <Route path='/register' element={<Register />} />
+        <Route path='/cart' element={<Cart />} />
+        <Route path='/payment' element={ <PaymentPage/>}/>
       </Routes>
     </div>
   )

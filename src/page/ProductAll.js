@@ -10,22 +10,24 @@ const ProductAll = () => {
   const { products, isLoading, error } = useSelector((state) => state.product);
 
   useEffect(() => { 
-    if (!products) { 
-      dispatch(getProductsAll()); 
-    }
-     
-  }, [dispatch,products])
+    dispatch(getProductsAll()); 
+  }, [dispatch])
   
-
+  if (isLoading) { 
+    return (
+    <div className='loading-spinner'>
+      <ClipLoader size={100} color='black' loading/>
+    </div>)
+  }
    if (error) { 
     console.log("error:", error);
   }
   return (
     <div>
       <SubNav title='ALL' />
-      {isLoading? (<ClipLoader className='loading-sppiner' size={150} color='black' />):(<div className='card-area'>
+      <div className='card-area'>
         {products && products.map((product) => (<Card item={product} />))}
-      </div>)}
+      </div>
     </div>
   )
 }

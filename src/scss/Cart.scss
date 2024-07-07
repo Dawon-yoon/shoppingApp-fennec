@@ -1,0 +1,120 @@
+@mixin clearBtn {
+    background: none;
+    border: none;
+}
+.cart-center{
+    padding-top: 119px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//cart list and order buttons
+.cart-area{
+    width: 958px;
+    button,input{
+        cursor: pointer;
+    }
+   //width media queries
+   @media (max-width:1100px){
+    width: 90%;
+   }
+}
+
+//cart component
+.cart-box{
+    margin: 2rem 0;
+    position: relative;
+    display: flex;
+    border: 1px solid black;
+    width: 100%;
+    
+   input, .remove-btn{
+    position: absolute;
+    top: 0;
+    &.remove-btn{
+        right: 0;
+        @include clearBtn;
+        font-size: 18px;
+    }
+   }
+
+   .order-btn{
+    position: absolute;
+    top:50%;
+    transform: translateY(-50%);
+    right: 10px;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    padding: 6px 12px;
+   }
+
+   //text-area
+   .text-area{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 2rem;
+    padding-right: 120px;
+    @media (min-width:950px){
+        .cart-item{
+            display: flex;
+            gap: 3rem;
+            align-items: center;
+        }
+        .cart-stock{
+            display: flex;
+            gap: 2rem;
+        }
+    }
+    @media(max-width:767px){
+        justify-content: center;
+        flex-direction: column;
+        align-items: baseline;
+    }
+    .cart-item-title{
+        font-size: 17px;
+    }
+    p{
+        font-size: 15px
+    }
+    .cart-stock{
+        button{
+            @include clearBtn;
+        }
+    }
+   }
+}
+
+//total prices area
+.total-area{
+    float: right;
+    width: 330px;
+    @media(max-width:768px){
+        width: 100%;
+    }
+    .total-price{
+        display: flex;
+        justify-content: space-between;
+        
+    }
+    .total-btn-area{
+        margin-top: 20px;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+        button{
+            width: 50%;
+            height: 50px;
+            &.order-checked{
+                background-color: white;
+            }
+            &.order-all{
+                background-color: black;
+                color: white;
+            }
+        }
+    }
+}
