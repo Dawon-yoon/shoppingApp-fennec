@@ -45,7 +45,7 @@ const ProductDetail = () => {
     if (path === "/cart") { 
       dispatch(addToCartList({ ...product, orderStock }));
     }
-    navigate(path, {state:orderStock});
+    navigate(path, {state:orderStock*product.price});
   } 
 
   return (
@@ -66,7 +66,7 @@ const ProductDetail = () => {
         </div>
         <div className='detaile-button-area'>
           <button onClick={()=>handleNavigate("/cart",orderStock)}>Add to cart</button>
-          <button onClick={()=>handleNavigate("/payment",product,orderStock)}>Buy it now</button>
+          <button onClick={()=>handleNavigate("/payment",orderStock,product?.price)}>Buy it now</button>
         </div>
         <div>
           <h4>Details<FontAwesomeIcon icon={faAngleDown} /></h4>

@@ -82,7 +82,7 @@ a{
         width: 338px;
         height: 40px;
         padding: 8px;
-        letter-spacing: 0.08rem;
+        letter-spacing: 0.1rem;
     }
     input:focus{
         outline: none;
@@ -93,6 +93,9 @@ a{
     button{
         width: 360px;
         @include formBtn;
+        &:hover{
+            cursor: pointer;
+        }
     }
 
     .login-links{

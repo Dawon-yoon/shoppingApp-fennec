@@ -9,10 +9,19 @@ import { loadCart, removeFromCartList } from '../reducer/cartSlice';
 const Cart = () => {
     const dispatch = useDispatch();
     const navigate = useNavigate();
+
     const [totalPrice, setTotalPrice] = useState(0);
     const [orderPrice, setOrderPrice] = useState(0);
     const [selectedItem, setSelectedItem] = useState({});
+
+    const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
     const cartList  = useSelector((state) => state.cart.cartList);
+
+    useEffect(() => {
+        if (!isAuthenticated) { 
+            navigate('/login');
+        }
+    }, [isAuthenticated, navigate]);
 
     useEffect(() => { 
         dispatch(loadCart());

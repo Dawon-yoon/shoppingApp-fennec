@@ -1,0 +1,72 @@
+.payment{
+    padding-top: 120px;
+    margin: 0 auto;
+    max-width:600px;
+    margin-bottom: 2rem;
+    @media(max-width:768px){
+        width: 80%;
+    }
+    label{
+        font-size: 15px;
+        letter-spacing: 0.05rem;
+    }
+    input{
+        height: 30px;
+        border-radius: 5px;
+        border-color: grey;
+        padding-left: 10px;
+        font-size: 15px;
+        letter-spacing: 0.05rem;
+    }
+    .form-row{
+        display: flex;
+        gap: 1rem;
+        width: 100%;
+        .form-group{
+            width: 50%;
+        }
+    }
+    .form-group{
+        margin-bottom: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        }
+    .form-credit{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        .rccs{
+            margin: 0;
+        }
+        .form-area{
+            width: 50%;
+        }
+        @media (max-width:700px){
+            flex-direction: column;
+        }
+    }
+    button{
+        margin-top: 1rem;
+        font-size: 16px;
+        letter-spacing: 0.1rem;
+        width: 100%;
+        background-color: black;
+        color: white;
+        height: 50px;
+        &:hover{
+            cursor: pointer;
+            background-color: white;
+            color: black;
+            transition: all 0.3s ease-in-out;
+        }
+    }
+    .totalprice{
+        margin-top: 1rem;
+        padding-top: 1rem;
+        border-top: 1px solid black;
+        display: flex;
+        justify-content: space-between;
+    }
+}

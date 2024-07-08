@@ -4,8 +4,9 @@ import { useNavigate,useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import { toggleSidebar } from '../reducer/commonUiSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCartShopping,faMagnifyingGlass,faUser,faBars,faX } from '@fortawesome/free-solid-svg-icons';
+import { faCartShopping,faMagnifyingGlass,faUser,faBars,faX,faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import Sidebar from './Sidebar';
+import { userLogout } from '../reducer/userSlice';
 
 
 const Navbar = () => {
@@ -14,6 +15,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const isSidebarOpen = useSelector((state) => state.ui.isSidebarOpen);
+  const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
 
   const handleSidebar = () => {
     dispatch(toggleSidebar());
@@ -22,6 +24,10 @@ const Navbar = () => {
   const handleNavigate = (path) => {
     if (isSidebarOpen) { dispatch(toggleSidebar())}
     navigate(path);
+  }
+
+  const handleLogout = () => { 
+    dispatch(userLogout());
   }
 
   return (
@@ -39,7 +45,18 @@ const Navbar = () => {
           <div
             onClick={()=>handleNavigate("/cart")}
             className='nav-icons-hidden'><FontAwesomeIcon icon={faCartShopping} /></div>
-            <div className='nav-icons-hidden'><FontAwesomeIcon icon={faUser} /></div>
+          {isAuthenticated ? (
+            <div
+              onClick={handleLogout}
+              className='nav-icons-hidden'>
+            <FontAwesomeIcon icon={faRightFromBracket} />
+            </div>
+          ) : (
+            <div
+            onClick={()=>handleNavigate("/login")}
+            className='nav-icons-hidden'><FontAwesomeIcon icon={faUser} />
+            </div>
+          )}
           </div>
         <div
           onClick={handleSidebar}

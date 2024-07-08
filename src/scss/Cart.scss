@@ -9,14 +9,16 @@
     justify-content: center;
     align-items: center;
     .cart-empty{
+        height: 100vh;
         width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 15rem;
-        gap: 10rem;
+        justify-content: center;
+        gap: 2rem;
         font-size: 20px;
         button{
+            margin-bottom: 10rem;
             font-size: 17px;
             width: 200px;
             height: 50px;

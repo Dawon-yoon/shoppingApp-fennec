@@ -4,6 +4,7 @@ import { useSelector } from 'react-redux';
 
 const Home = () => {
   const isSidebarOpen = useSelector((state) => state.ui.isSidebarOpen);
+
   return (
     <div>
       <div className='home-main'>
