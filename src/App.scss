@@ -173,3 +173,17 @@ a{
         transform: all 0.3s ease;
     }
 }
+
+.no-item{
+    @include wrapper;
+    @include flexCenter;
+    flex-direction: column;
+    font-size: 18px;
+    font-weight: 500;
+    span,
+    .link{
+        cursor: pointer;
+        border-bottom: 1px solid black;
+    }
+       
+}

@@ -1,0 +1,16 @@
+.pagenation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    button{
+        cursor: pointer;
+        background: none;
+        border: none;
+        margin: 0.8rem;
+        &.active{
+            background-color: black;
+            color: white;
+            border-radius: 50%;
+        }
+    }
+}
