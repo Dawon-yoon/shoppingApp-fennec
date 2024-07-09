@@ -2,10 +2,11 @@ import React from 'react';
 import "../scss/Navbar.scss";
 import { useNavigate,useLocation } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleSidebar } from '../reducer/commonUiSlice';
+import { toggleSidebar,toggleSearchbar } from '../reducer/commonUiSlice';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCartShopping,faMagnifyingGlass,faUser,faBars,faX,faRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 import Sidebar from './Sidebar';
+import Searchbar from './Searchbar';
 import { userLogout } from '../reducer/userSlice';
 
 
@@ -15,6 +16,7 @@ const Navbar = () => {
   const dispatch = useDispatch();
 
   const isSidebarOpen = useSelector((state) => state.ui.isSidebarOpen);
+  const isSearchbarOpen = useSelector((state) => state.ui.isSearchbarOpen);
   const isAuthenticated = useSelector((state) => state.user.isAuthenticated);
 
   const handleSidebar = () => {
@@ -30,6 +32,10 @@ const Navbar = () => {
     dispatch(userLogout());
   }
 
+  const handleSearchbar = () => { 
+    dispatch(toggleSearchbar());
+  }
+
   return (
     <div className='nav-bar'>
       <div className={`nav ${location.pathname !=="/"? 'nav-bg':''}`}>
@@ -41,7 +47,9 @@ const Navbar = () => {
             <li onClick={()=>handleNavigate("/product/acc")}>ACC</li>
           </ul>
           <div className='nav-icons'>
-            <div className='nav-icons-hidden'><FontAwesomeIcon icon={faMagnifyingGlass} /></div>
+          <div
+            onClick={handleSearchbar}
+            className='nav-icons-hidden'><FontAwesomeIcon icon={faMagnifyingGlass} /></div>
           <div
             onClick={()=>handleNavigate("/cart")}
             className='nav-icons-hidden'><FontAwesomeIcon icon={faCartShopping} /></div>
@@ -65,6 +73,7 @@ const Navbar = () => {
           </div>
       </div>
       {isSidebarOpen && <Sidebar />}
+      {isSearchbarOpen && <Searchbar/>}
     </div>
       
   )

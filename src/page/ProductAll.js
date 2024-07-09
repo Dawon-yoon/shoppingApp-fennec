@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
+import { useSearchParams } from 'react-router-dom';
 import { getProductsAll } from '../reducer/productSlice';
 import SubNav from '../components/SubNav';
 import Card from '../components/Card';
@@ -7,11 +8,13 @@ import { ClipLoader } from 'react-spinners';
 
 const ProductAll = () => {
   const dispatch = useDispatch();
+  const [searchParams] = useSearchParams();
+  const searchQuery = searchParams.get("q");
   const { products, isLoading, error } = useSelector((state) => state.product);
 
-  useEffect(() => { 
-    dispatch(getProductsAll()); 
-  }, [dispatch])
+  useEffect(() => {
+    dispatch(getProductsAll(searchQuery)); 
+  }, [dispatch,searchQuery])
   
   if (isLoading) { 
     return (

@@ -1,7 +1,7 @@
 import React,{useEffect} from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
-import { toggleSidebar } from '../reducer/commonUiSlice';
+import { toggleSearchbar, toggleSidebar } from '../reducer/commonUiSlice';
 import "../scss/Sidebar.scss";
 import { userLogout } from '../reducer/userSlice';
 
@@ -19,6 +19,10 @@ const Sidebar = () => {
 
     const handleLogout = () => { 
         dispatch(userLogout());
+    }
+
+    const handleSearch = () => { 
+        dispatch(toggleSearchbar());
     }
 
     useEffect(() => { 
@@ -45,7 +49,7 @@ const Sidebar = () => {
           <div className='second-col'>
               <span onClick={() => handleNavigate("/cart")}>Cart</span>
               {isAuthenticated? (<span onClick={handleLogout}>Logout</span>):(<span onClick={()=>handleNavigate("/login")}>Login</span>)}
-              
+              <span onClick={handleSearch}>Search</span>
               <span>JP / KR</span>
           </div>  
     </div>

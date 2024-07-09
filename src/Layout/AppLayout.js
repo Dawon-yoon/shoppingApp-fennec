@@ -5,12 +5,12 @@ import { useSelector} from 'react-redux';
 
 const AppLayout = ({ children }) => {
     const isSidebarOpen = useSelector((state) => state.ui.isSidebarOpen);
-
   return (
       <div>
         <Navbar/>
           {children}
-          { !isSidebarOpen && <Footer/>}
+      {!isSidebarOpen && <Footer />}
+      
     </div>
   )
 }

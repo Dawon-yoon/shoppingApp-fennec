@@ -1,10 +1,14 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 const url = `http://localhost:4000/products`;
 
-export const getProductsAll = createAsyncThunk('product/fetchAll', async (_, { rejectWithValue}) => { 
+export const getProductsAll = createAsyncThunk('product/fetchAll', async (searchQuery, { rejectWithValue}) => { 
     try {
         let response = await fetch(url);
-        return await response.json();
+        let data = await response.json();
+        if (searchQuery) { 
+            data = data.filter(item => item.title.toLowerCase().includes(searchQuery.toLowerCase()));
+        }
+        return data;
     } catch (error) {
         return rejectWithValue(error.message);
     }
