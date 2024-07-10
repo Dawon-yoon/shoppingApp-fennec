@@ -1,5 +1,4 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
-// const url = `http://localhost:4000/products`;
 const url = `https://my-json-server.typicode.com/Dawon-yoon/shoppingApp-fennec/products`
 
 export const getProductsAll = createAsyncThunk('product/fetchAll', async (searchQuery, { rejectWithValue}) => { 

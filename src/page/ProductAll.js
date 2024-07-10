@@ -53,12 +53,6 @@ const ProductAll = () => {
         onPageChange={setCurrentPage}
       /></div>
       )}
-      {/* <Pagenation
-        currentPage={currentPage}
-        totalItems={products.length}
-        itemsPerPage={itemsPerPage}
-        onPageChange={setCurrentPage}
-      /> */}
     </div>
   )
 }
