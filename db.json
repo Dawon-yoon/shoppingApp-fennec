@@ -98,69 +98,7 @@
             "descriptions":["自然なシルエットのミディアムサイズのホーボーバッグ","光沢がある柔らかい触り心地のナイロン素材を使用","ストラップの調節が可能で、ショルダーとクロスの2wayでスタイリング可能"],
             "category":"bag",
             "additionalImages":["https://fennec.co.kr/web/product/small/202406/fd196dc6563498cd631a789c036e330c.jpg","https://fennec.co.kr/web/product/extra/small/202406/30dde2af297e96830389b163f31183f3.jpg","https://fennec.co.kr/web/product/extra/small/202406/180ecd9f34e5cc13c1f6d384647e54bd.jpg"]
-        },
-        {
-            "id":11,
-            "productImage":"https://fennec.co.kr/web/product/small/202406/6f8811d812ca575bd4a71a9dfdea60ad.jpg",
-            "title":"MEDIUM HOBO - SILVER",
-            "price":6500,
-            "descriptions":["自然なシルエットのミディアムサイズのホーボーバッグ","光沢がある柔らかい触り心地のナイロン素材を使用","ストラップの調節が可能で、ショルダーとクロスの2wayでスタイリング可能"],
-            "category":"bag",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202406/6f8811d812ca575bd4a71a9dfdea60ad.jpg","https://fennec.co.kr/web/product/extra/small/202406/a18d6950e2edf411a02474df0f784596.jpg"]
-        },
-        {
-            "id":12,
-            "productImage":"https://fennec.co.kr/web/product/small/202406/2cd5e4815037c794cb1726ebfb42d206.jpg",
-            "title":"RIBBON FLAP CARD CASE - MIRROR SILVER",
-            "price":5800,
-            "descriptions":["リボン形状のフラップがポイントのカードケースとビーズリボンキーリングのセット構成","ミラーコーティングタイプのメタリックシルバー牛革素材","合計5つのカードスロットで構成"],
-            "category":"wallet",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202406/2cd5e4815037c794cb1726ebfb42d206.jpg","https://fennec.co.kr/web/product/extra/small/202406/1f73dd9b44ee6515c3fe42d5c116b094.jpg","https://fennec.co.kr/web/product/extra/small/202406/8b128f06ab805908518065e2b1d42bfe.jpg"]
-        },
-        {
-            "id":13,
-            "productImage":"https://fennec.co.kr/web/product/small/202406/bc53661afce596b64afd1cb2170910e1.jpg",
-            "title":"RIBBON FLAP CARD CASE - MIRROR PINK",
-            "price":5800,
-            "descriptions":["リボン形状のフラップがポイントのカードケースとビーズリボンキーリングのセット構成","ミラーコーティングタイプのメタリックシルバー牛革素材","合計5つのカードスロットで構成"],
-            "category":"wallet",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202406/bc53661afce596b64afd1cb2170910e1.jpg","https://fennec.co.kr/web/product/extra/small/202406/fc845ece5af3d10e6bbfe6e0e67193e2.jpg","https://fennec.co.kr/web/product/extra/small/202406/8e6c9ad7cdedd19348b0856480098dc1.jpg"]
-        },
-        {
-            "id":14,
-            "productImage":"https://fennec.co.kr/web/product/small/202402/ce0c391c9564cdb532a230da0d1b7329.jpg",
-            "title":"DOUBLE LONG CHAIN - SILVER",
-            "price":4200,
-            "descriptions":["ミックスチェーンとミニペンダントがポイントの使い勝手の良いチェーン","長さ調節が可能でチェーンベルトとしてもスタイリングが可能なアイテム"],
-            "category":"acc",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202402/ce0c391c9564cdb532a230da0d1b7329.jpg","https://fennec.co.kr/web/product/extra/small/202402/1a918f65bea2a47ace737300bbec3520.jpg","https://fennec.co.kr/web/product/extra/small/202402/fa1c955450312c093d30c49befa1273f.jpg"]
-        },
-        {
-            "id":15,
-            "productImage":"https://fennec.co.kr/web/product/small/202402/118ae965b4cf7afb8575fccb1094139a.jpg",
-            "title":"TRIANGLE LONG STRAP - SILVER",
-            "price":3300,
-            "descriptions":["シグネチャー装飾であるトライアングルディテールを施して開発したロングチェーンストラップ","クロスして肩掛けできる長さのストラップで、Dリングが付いた財布やミニバッグに適用可能"],
-            "category":"acc",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202402/118ae965b4cf7afb8575fccb1094139a.jpg","https://fennec.co.kr/web/product/extra/small/202402/4da61991d10e160285699656d222e706.jpg",""]
-        },
-        {
-            "id":16,
-            "productImage":"https://fennec.co.kr/web/product/small/202402/7658c80926471954e2f268a050dec1d8.jpg",
-            "title":"TRIANGLE KEYRING - SILVER",
-            "price":1800,
-            "descriptions":["シグネチャーデザインのトライアングルペンダントが付いたキーリング","バッグや財布などのDリングディテールを活用して、さまざまなスタイリングが可能"],
-            "category":"acc",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202402/7658c80926471954e2f268a050dec1d8.jpg","https://fennec.co.kr/web/product/extra/small/202402/5937c4e72405739337f53cce2dbb8912.jpg"]
-        },
-        {
-            "id":17,
-            "productImage":"https://fennec.co.kr/web/product/small/202402/a77b1a6d13939b2fb572a7950b2b403b.jpg",
-            "title":"TRIANGLE CHAIN STRAP - SILVER",
-            "price":2300,
-            "descriptions":["シグネチャー装飾であるトライアングルディテールを施して開発したチェーンストラップ","ミニトートバッグの長さのストラップで、Dリングが付いた財布やミニバッグに装着可能"],
-            "category":"acc",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202402/a77b1a6d13939b2fb572a7950b2b403b.jpg","https://fennec.co.kr/web/product/extra/small/202402/6f2a3e299c687091a12985cc2b798288.jpg"]
         }
+       
     ]
 }
