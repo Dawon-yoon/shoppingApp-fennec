@@ -199,46 +199,6 @@
             "descriptions":["スクエアシェイプバレルバッグ","生活防水が可能なナイロン素材を使用","柔らかいジッパークロージング、両サイドにストリングポケット、内部オープンポケットで実用的なショルダーバッグ"],
             "category":"bag",
             "additionalImages":["https://fennec.co.kr/web/product/small/202403/6576565be20ad091772b0272c8dcfb1b.jpg","https://fennec.co.kr/web/product/extra/small/202403/f77e98f884e18cd96ad05e141877ea30.jpg","https://fennec.co.kr/web/product/extra/small/202403/87a664865f2f428c2ef289cd229e9d8a.jpg","https://fennec.co.kr/web/product/extra/small/202403/003c7753b9270ada11f53a97e7fbb2f7.jpg","https://fennec.co.kr/web/product/extra/small/202403/f2b183d9bf52bcb03c597f2b1eb2e50c.jpg"]
-        },
-        {
-            "id":20,
-            "productImage":"https://fennec.co.kr/web/product/tiny/202404/ec3aa98e4b97ddc90c6d060e13553fec.jpg",
-            "title":"TRIANGLE SLIT CARD HOLDER - BLACK",
-            "price":4300,
-            "new":false,
-            "descriptions":["グロッシーなエナメルコーティングが施された牛革カードホルダー","ロゴが刻印されたミニトライアングルニッケル装飾ポイント","合計5つのスロットでカードを分けて収納可能"],
-            "category":"wallet",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202404/b180fec01be3fa88ea4feb65cea2c4cb.jpg","https://fennec.co.kr/web/product/extra/small/202404/8e9a01618ac0a95028517ff56af0ac01.jpg"]
-        },
-        {
-            "id":21,
-            "productImage":"https://fennec.co.kr/web/product/tiny/202404/fb1267317bd948fc5ac7b1ff3c5aacb3.jpg",
-            "title":"TRIANGLE SLIT CARD HOLDER - BLUE",
-            "price":4300,
-            "new":false,
-            "descriptions":["グロッシーなエナメルコーティングが施された牛革カードホルダー","ロゴが刻印されたミニトライアングルニッケル装飾ポイント","合計5つのスロットでカードを分けて収納可能"],
-            "category":"wallet",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202404/8b9efee636318294700e9c06db1cc10c.jpg","https://fennec.co.kr/web/product/extra/small/202404/94cd8c8d4718a02b6a715fe1fd02c5e9.jpg"]
-        },
-        {
-            "id":22,
-            "productImage":"https://fennec.co.kr/web/product/tiny/202404/709a91b08d07c615b10e67c381b83d0b.jpg",
-            "title":"TRIANGLE SLIT CARD HOLDER - RED",
-            "price":4300,
-            "new":false,
-            "descriptions":["グロッシーなエナメルコーティングが施された牛革カードホルダー","ロゴが刻印されたミニトライアングルニッケル装飾ポイント","合計5つのスロットでカードを分けて収納可能"],
-            "category":"wallet",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202404/66d5c136102a0ce5d4e56ab6d9355ccc.jpg","https://fennec.co.kr/web/product/extra/small/202404/63bc44b95e07f43d3cc97bba7486cf6f.jpg"]
-        },
-        {
-            "id":23,
-            "productImage":"https://fennec.co.kr/web/product/tiny/202406/0e6ab236a7ac3ba81935952bcfd7443f.jpg",
-            "title":"TRIANGLE SLIT CARD HOLDER - MIRROR SILVER",
-            "price":4300,
-            "new":false,
-            "descriptions":["グロッシーなエナメルコーティングが施された牛革カードホルダー","ロゴが刻印されたミニトライアングルニッケル装飾ポイント","合計5つのスロットでカードを分けて収納可能"],
-            "category":"wallet",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202406/2cbf9ee8420da52d152ae0b746dab227.jpg","https://fennec.co.kr/web/product/extra/small/202406/672f86ddc033f6d9d46226392aa392a6.jpg"]
-        }  
+        }
     ]
 }
