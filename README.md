@@ -1,6 +1,8 @@
 # shopping app
-
+* https://fennec-by-dawon.netlify.app/product/7
+* 
 ## バック・アクセサリーブランドの fennec のオンラインストア
+![스크린샷 2024-07-10 17 42 23](https://github.com/Dawon-yoon/shoppingApp-fennec/assets/154343298/82aab722-f89c-4fd5-bac7-000a1803565b)
 
 ### stack: react,scss,redux,json-server
 
