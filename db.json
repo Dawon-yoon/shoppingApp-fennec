@@ -98,7 +98,15 @@
             "descriptions":["自然なシルエットのミディアムサイズのホーボーバッグ","光沢がある柔らかい触り心地のナイロン素材を使用","ストラップの調節が可能で、ショルダーとクロスの2wayでスタイリング可能"],
             "category":"bag",
             "additionalImages":["https://fennec.co.kr/web/product/small/202406/fd196dc6563498cd631a789c036e330c.jpg","https://fennec.co.kr/web/product/extra/small/202406/30dde2af297e96830389b163f31183f3.jpg","https://fennec.co.kr/web/product/extra/small/202406/180ecd9f34e5cc13c1f6d384647e54bd.jpg"]
+        },
+        {
+            "id":11,
+            "productImage":"https://fennec.co.kr/web/product/small/202406/6f8811d812ca575bd4a71a9dfdea60ad.jpg",
+            "title":"MEDIUM HOBO - SILVER",
+            "price":6500,
+            "descriptions":["自然なシルエットのミディアムサイズのホーボーバッグ","光沢がある柔らかい触り心地のナイロン素材を使用","ストラップの調節が可能で、ショルダーとクロスの2wayでスタイリング可能"],
+            "category":"bag",
+            "additionalImages":["https://fennec.co.kr/web/product/small/202406/6f8811d812ca575bd4a71a9dfdea60ad.jpg","https://fennec.co.kr/web/product/extra/small/202406/a18d6950e2edf411a02474df0f784596.jpg"]
         }
-       
     ]
 }

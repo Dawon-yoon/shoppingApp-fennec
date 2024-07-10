@@ -18,19 +18,30 @@ const Carousel = ({item}) => {
     }
   return (
       <div className='carousel'>
-          <button className='prev' onClick={handlePrevImage}><FontAwesomeIcon icon={faChevronLeft} /></button>
-          <div className='carousel-image'>
-              <img src={item[currentIndex]} alt='detail-image' />
-          </div>
-          <button className='next' onClick={handleNextImage}><FontAwesomeIcon icon={faChevronRight} /></button>
-          {item.length > 1 && (<div className='indicators'>
-              {item?.map((image,index) => (<button
-                  key={index}
-                  className={index === currentIndex ? 'active' : ''}
-                  onClick={()=>handleMoveImage(index)}
-              />))}
-          </div>)}
-    </div>
+            {item.length > 1 && (
+                <div>
+                    <button className='prev' onClick={handlePrevImage}><FontAwesomeIcon icon={faChevronLeft} /></button>
+                    <div className='carousel-image'>
+                        <img src={item[currentIndex]} alt='detail-image' />
+                    </div>
+                    <button className='next' onClick={handleNextImage}><FontAwesomeIcon icon={faChevronRight} /></button>
+                    <div className='indicators'>
+                        {item.map((image, index) => (
+                            <button
+                                key={index}
+                                className={index === currentIndex ? 'active' : ''}
+                                onClick={() => handleMoveImage(index)}
+                            />
+                        ))}
+                    </div>
+                </div>
+            )}
+            {item.length === 1 && (
+                <div className='carousel-image'>
+                    <img src={item[0]} alt='detail-image' />
+                </div>
+            )}
+        </div>
   )
 }
 
