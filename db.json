@@ -161,24 +161,6 @@
             "descriptions":["シグネチャー装飾であるトライアングルディテールを施して開発したチェーンストラップ","ミニトートバッグの長さのストラップで、Dリングが付いた財布やミニバッグに装着可能"],
             "category":"acc",
             "additionalImages":["https://fennec.co.kr/web/product/small/202402/a77b1a6d13939b2fb572a7950b2b403b.jpg","https://fennec.co.kr/web/product/extra/small/202402/6f2a3e299c687091a12985cc2b798288.jpg"]
-        },
-        {
-            "id":18,
-            "productImage":"https://fennec.co.kr/web/product/medium/202403/3190202b1faab0ac63a3ce43922c03de.jpg",
-            "title":"BOW BARREL BAG - BLACK",
-            "price":9800,
-            "descriptions":["スクエアシェイプバレルバッグ","生活防水が可能なナイロン素材を使用"],
-            "category":"bag",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202403/19a227e9e16567f682fad8c32375917c.jpg","https://fennec.co.kr/web/product/extra/small/202403/4504896005a8ac763800bd0b5856bac4.jpg","https://fennec.co.kr/web/product/extra/small/202403/77dd076f30e6d8ac5f1d0e811aeae775.jpg"]
-        },
-        {
-            "id":19,
-            "productImage":"https://fennec.co.kr/web/product/medium/202403/8231f9e075b774ad77938919d58859c1.jpg",
-            "title":"BOW BARREL BAG - SILVER",
-            "price":9800,
-            "descriptions":["スクエアシェイプバレルバッグ","生活防水が可能なナイロン素材を使用"],
-            "category":"bag",
-            "additionalImages":["https://fennec.co.kr/web/product/small/202403/6576565be20ad091772b0272c8dcfb1b.jpg","https://fennec.co.kr/web/product/extra/small/202403/f77e98f884e18cd96ad05e141877ea30.jpg","https://fennec.co.kr/web/product/extra/small/202403/f2b183d9bf52bcb03c597f2b1eb2e50c.jpg"]
         }
     ]
 }
