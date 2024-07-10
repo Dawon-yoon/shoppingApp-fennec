@@ -6,7 +6,6 @@
     padding-bottom: 0.7px;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-
     @media (min-width: 768px) and (max-width: 1023px) {
         grid-template-columns: repeat(3, 1fr);
     }
@@ -38,11 +37,8 @@
         font-size: 16px;
         font-weight: 600;
         letter-spacing: 0.05rem;
-
-        .new-item{
-            font-size: 13px;
-            font-weight: 500;
-            color: silver;
+        .price{
+           margin-top: 10px;
         }
     }
 

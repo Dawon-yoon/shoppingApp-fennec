@@ -11,8 +11,7 @@ const Card = ({ item }) => {
       <img src={item?.productImage} alt='product-image'/>
           <div className='card-text'>
         <div>{item?.title}</div>
-        <div>¥{item?.price}</div>
-        {item?.new && (<div className='new-item'>new</div>)}
+        <div className='price'>¥{item?.price}</div>
           </div>
     </div>
   )
